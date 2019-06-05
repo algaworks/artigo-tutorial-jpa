@@ -14,9 +14,9 @@ public class CadastroCliente10 {
 
 		Cliente cliente = new Cliente();
 		cliente.setNome("Computer Nova Informática");
-		entityManager.persist(cliente);
 		
 		entityManager.getTransaction().begin();
+		entityManager.persist(cliente);
 		entityManager.getTransaction().commit();
 
 		entityManager.close();

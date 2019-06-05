@@ -12,12 +12,10 @@ public class CadastroCliente05 {
 		EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("Clientes-PU");
 		EntityManager entityManager = entityManagerFactory.createEntityManager();
 
-		Cliente cliente = new Cliente();
-		cliente.setId(1);
-		cliente.setNome("Autopeças Rodovia");
+		Cliente cliente = entityManager.find(Cliente.class, 1);
 
 		entityManager.getTransaction().begin();
-		entityManager.merge(cliente);
+		cliente.setNome("Autopeças Rodovia");
 		entityManager.getTransaction().commit();
 
 		entityManager.close();
