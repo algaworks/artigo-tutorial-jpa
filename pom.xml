@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.algaworks</groupId>
-	<artifactId>artigo-jpa</artifactId>
+	<artifactId>artigo-tutorial-jpa</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
 	<name>Artigo JPA</name>
